@@ -12,6 +12,10 @@ const server = http.createServer((request, response) => {
     serviceTodolist.gettodolist(request, response);
   } else if (request.method == 'POST') {
     serviceTodolist.createtodolist(request, response);
+  } else if (request.method == 'PUT') {
+    serviceTodolist.updateTodo(request, response);
+  } else if (request.method == 'DELETE') {
+    serviceTodolist.deleteTodo(request, response);
   }
 
 });
