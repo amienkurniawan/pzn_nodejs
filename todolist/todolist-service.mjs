@@ -1,9 +1,9 @@
 export class TodoListService {
+
   todolist = ['amien', 'kurniawan'];
 
-  gettodolist(request, response) {
-
-    const json = JSON.stringify({
+  getDataJson() {
+    return JSON.stringify({
       code: 200,
       status: "OK",
       data: this.todolist.map((value, index) => {
@@ -12,9 +12,25 @@ export class TodoListService {
           todo: value
         }
       })
+    });
+  }
+
+  gettodolist(request, response) {
+    response.write(this.getDataJson());
+    response.end();
+  }
+
+  createtodolist(request, response) {
+
+    request.addListener('data', (data) => {
+
+      const body = JSON.parse(data.toString());
+
+      this.todolist.push(body.todo);
+
+      response.write(this.getDataJson());
+      response.end();
     })
 
-    response.write(json);
-    response.end()
   }
 }

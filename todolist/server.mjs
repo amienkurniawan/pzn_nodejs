@@ -3,14 +3,16 @@ import http from 'http';
 
 const serviceTodolist = new TodoListService();
 
+
 const server = http.createServer((request, response) => {
 
-  if (request.method == 'POST') {
-    serviceTodolist.gettodolist(request, response);
-  }
+  response.setHeader('Content-Type', 'application/json');
 
-  response.write("Todolist API");
-  response.end();
+  if (request.method == 'GET') {
+    serviceTodolist.gettodolist(request, response);
+  } else if (request.method == 'POST') {
+    serviceTodolist.createtodolist(request, response);
+  }
 
 });
 
