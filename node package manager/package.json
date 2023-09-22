@@ -1,0 +1,11 @@
+{
+  "name": "node-package-manager",
+  "version": "1.0.0",
+  "description": "latihan membuat project dari node package manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amien kurniawan",
+  "license": "ISC"
+}
