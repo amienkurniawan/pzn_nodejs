@@ -11,5 +11,10 @@
   },
   "author": "amien kurniawan",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./write": "./write.js",
+    "./read": "./read.js"
+  }
 }
