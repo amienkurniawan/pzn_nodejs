@@ -1,0 +1,12 @@
+{
+  "name": "node-npm-library",
+  "version": "1.0.0",
+  "description": "belajar npm library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amien kurniawan",
+  "license": "ISC",
+  "type": "module"
+}
