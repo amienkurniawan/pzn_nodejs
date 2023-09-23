@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "echo 'before application running'",
     "start": "node index.js",
-    "poststart": "echo 'after application running'"
+    "poststart": "echo 'after application running'",
+    "install-production": "npm install --production"
   },
   "author": "amien kurniawan",
   "license": "ISC",
@@ -19,5 +20,8 @@
   },
   "dependencies": {
     "lodash": "4.x"
+  },
+  "devDependencies": {
+    "moment": "2.29.x"
   }
 }
