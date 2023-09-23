@@ -16,5 +16,8 @@
     ".": "./index.js",
     "./write": "./write.js",
     "./read": "./read.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
   }
 }
