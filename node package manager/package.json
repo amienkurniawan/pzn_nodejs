@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "prestart": "echo 'before application running'",
+    "start": "node index.js",
+    "poststart": "echo 'after application running'"
   },
   "author": "amien kurniawan",
   "license": "ISC",
