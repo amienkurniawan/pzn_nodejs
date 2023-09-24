@@ -19,7 +19,8 @@
     "./read": "./read.js"
   },
   "dependencies": {
-    "lodash": "4.x"
+    "lodash": "4.x",
+    "amien-node-npm-library": "1.x"
   },
   "devDependencies": {
     "moment": "2.29.x"
