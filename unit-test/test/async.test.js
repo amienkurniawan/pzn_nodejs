@@ -5,3 +5,8 @@ test("test async function", async () => {
 
   expect(result).toBe("Hello Amien");
 });
+
+test("test async matcher", async () => {
+  await expect(sayHelloAsync("amien")).resolves.toBe("Hello amien");
+  await expect(sayHelloAsync()).rejects.toBe("Name is empty");
+})
