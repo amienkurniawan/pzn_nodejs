@@ -4,7 +4,7 @@ beforeEach(() => console.info("Before Each Outer"));
 test("Test Outer", () => console.info("Test Outer"));
 afterEach(() => console.info("After Each Outer"));
 
-describe("inner", () => {
+describe("inner", () => { //scoping
 
   beforeAll(() => console.info("Before All inner"));
   beforeEach(() => console.info("Before Each inner"));
@@ -16,6 +16,5 @@ describe("inner", () => {
   afterEach(() => console.info("After Each inner"));
 
 });
-
 
 afterAll(() => console.info("After All Outer"));
