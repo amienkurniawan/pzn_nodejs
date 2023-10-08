@@ -11,3 +11,11 @@ test.concurrent("concurrent 2", async () => {
 test.concurrent("concurrent 3", async () => {
   await expect(sayHelloAsync("Amien")).resolves.toBe("Hello Amien")
 })
+
+test.concurrent("concurrent 4", async () => {
+  await expect(sayHelloAsync("Amien")).resolves.toBe("Hello Amien")
+})
+
+test.concurrent("concurrent 5", async () => {
+  await expect(sayHelloAsync("Amien")).resolves.toBe("Hello Amien")
+})
