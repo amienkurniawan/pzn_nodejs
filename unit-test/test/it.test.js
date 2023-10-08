@@ -6,4 +6,10 @@ describe("When call sumAll()", () => {
     expect(sumAll([10, 10, 10])).toBe(30);
 
   });
+
+  it("should get 20 with parameter [10,10,10]", () => {
+
+    expect(sumAll([10, 10])).toBe(20);
+
+  });
 });
