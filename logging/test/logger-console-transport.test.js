@@ -1,6 +1,6 @@
-import winston from winston;
+import winston from "winston";
 
-test("create new logger", () => {
+test("create new logger console transport", () => {
   const logger = winston.createLogger({
     transports: [
       new winston.transports.Console({})
