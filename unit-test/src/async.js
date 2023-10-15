@@ -9,3 +9,14 @@ export const sayHelloAsync = (name) => {
     }, 2000);
   });
 };
+
+
+export const getBalance = async (name, from, cashFrom) => {
+  const balance = await from();
+  const cash = await cashFrom();
+  return {
+    name: name,
+    balance: balance,
+    cash: cash
+  }
+}
