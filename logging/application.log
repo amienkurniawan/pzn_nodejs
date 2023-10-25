@@ -1,0 +1,9 @@
+{"level":"info","message":"hello test info","ms":"+0ms","timestamp":"2023-10-25T00:18:34.876Z"}
+{"level":"warn","message":"hello test warning","ms":"+2ms","timestamp":"2023-10-25T00:18:34.879Z"}
+{"level":"error","message":"hello test error","ms":"+1ms","timestamp":"2023-10-25T00:18:34.880Z"}
+{"level":"info","message":"hello test info","ms":"+0ms","timestamp":"2023-10-25T00:19:56.282Z"}
+{"level":"warn","message":"hello test warning","ms":"+2ms","timestamp":"2023-10-25T00:19:56.285Z"}
+{"level":"error","message":"hello test error","ms":"+1ms","timestamp":"2023-10-25T00:19:56.286Z"}
+{"level":"info","message":"hello test info","ms":"+0ms","timestamp":"2023-10-25T00:20:21.803Z"}
+{"level":"warn","message":"hello test warning","ms":"+2ms","timestamp":"2023-10-25T00:20:21.806Z"}
+{"level":"error","message":"hello test error","ms":"+1ms","timestamp":"2023-10-25T00:20:21.807Z"}
