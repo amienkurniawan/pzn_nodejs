@@ -3,16 +3,22 @@ import winston from 'winston';
 
 test("logging with daily rotate file", () => {
   const logger = winston.createLogger({
-    level: "error",
+    level: "info",
     transports: [
       new winston.transports.Console({}),
       new DailyRotateFile({
-        filename: "app-%DATE%.log"
+        filename: "app-%DATE%.log",
+        zippedArchive: true,
+        maxSize: "10m",
+        maxFiles: "14d"
       })
     ]
   });
 
-  logger.info("Hello World info");
-  logger.warn("Hello World warn");
-  logger.error("Hello World error");
+  for (let i = 0; i < 100000; i++) {
+    logger.info("Hello World info");
+    logger.warn("Hello World warn");
+    logger.error("Hello World error");
+  }
+
 })
