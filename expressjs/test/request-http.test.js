@@ -4,11 +4,11 @@ import request from "supertest";
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send("Hello World");
+  res.send(`Hello ${req.query.name}`);
 });
 
-test("Test Express JS", async () => {
-  const response = await request(app).get("/");
+test("Test Query Parameter", async () => {
+  const response = await request(app).get("/").query({ name: "Amien" });
 
-  expect(response.text).toBe("Hello World");
+  expect(response.text).toBe("Hello Amien");
 });
