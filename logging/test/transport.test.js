@@ -28,4 +28,4 @@ test("create new logger with new transport", () => {
   logger.log({ level: "verbose", message: "Hello Verbose" })
   logger.log({ level: "debug", message: "Hello Debug" })
   logger.log({ level: "silly", message: "Hello Silly" })
-});
+}); 

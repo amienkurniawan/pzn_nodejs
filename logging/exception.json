@@ -1,0 +1,53 @@
+{
+  "date": "Sat Oct 28 2023 16:19:32 GMT+0700 (Western Indonesia Time)",
+  "error": {},
+  "exception": true,
+  "level": "error",
+  "message": "uncaughtException: hello is not defined\nReferenceError: hello is not defined\n    at file:///C:/Node/logging/src/logging-exception.js:14:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)",
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 40016.515
+  },
+  "process": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Node\\logging\\src\\logging-exception.js"
+    ],
+    "cwd": "C:\\Node\\logging",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "gid": null,
+    "memoryUsage": {
+      "arrayBuffers": 119264,
+      "external": 823145,
+      "heapTotal": 10633216,
+      "heapUsed": 7617384,
+      "rss": 41721856
+    },
+    "pid": 19364,
+    "uid": null,
+    "version": "v20.1.0"
+  },
+  "stack": "ReferenceError: hello is not defined\n    at file:///C:/Node/logging/src/logging-exception.js:14:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)",
+  "trace": [
+    {
+      "column": 1,
+      "file": "file:///C:/Node/logging/src/logging-exception.js",
+      "function": null,
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "node:internal/modules/esm/module_job",
+      "function": "ModuleJob.run",
+      "line": 192,
+      "method": "run",
+      "native": false
+    }
+  ]
+}
