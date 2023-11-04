@@ -1,0 +1,12 @@
+{
+  "name": "belajar-nodejs-database",
+  "version": "1.0.0",
+  "description": "Belejar NodeJS Database",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amien Kurniawan",
+  "license": "ISC"
+}
