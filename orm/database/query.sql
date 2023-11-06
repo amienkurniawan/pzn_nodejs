@@ -20,7 +20,7 @@ create table customers(
 SELECT * FROM sample;
 
 SELECT * FROM customers;
-
+use belajar_nodejs_database;
 DESC TABLE customers;
 
 ALTER TABLE sample MODIFY id INT(10) AUTO_INCREMENT PRIMARY KEY;
